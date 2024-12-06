@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addContactScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".AddContactActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Título de Agregar Contacto -->
+        <TextView
+            android:id="@+id/tvAddContactTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar Contacto"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Campo de Nombre de Contacto -->
+        <EditText
+            android:id="@+id/etNombreContacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del Contacto"
+            android:inputType="textPersonName"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Campo de Número de Cuenta -->
+        <EditText
+            android:id="@+id/etNumeroCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de Cuenta"
+            android:inputType="number"
+            android:drawableStart="@drawable/ic_account"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Campo de Alias -->
+        <EditText
+            android:id="@+id/etAlias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alias"
+            android:inputType="text"
+            android:drawableStart="@drawable/ic_alias"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Botón de Agregar Contacto -->
+        <Button
+            android:id="@+id/btnAgregarContacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar Contacto"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+</ScrollView>

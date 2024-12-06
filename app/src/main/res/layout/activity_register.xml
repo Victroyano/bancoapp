@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Título de Registro -->
+        <TextView
+            android:id="@+id/tvRegisterTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro de Usuario"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Campo de Nombre -->
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Campo de Apellido -->
+        <EditText
+            android:id="@+id/etApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellido"
+            android:inputType="textPersonName"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Campo de Fecha de Nacimiento -->
+        <EditText
+            android:id="@+id/etFechaNac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha de Nacimiento (YYYY-MM-DD)"
+            android:inputType="date"
+            android:drawableStart="@drawable/ic_calendar"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Campo de Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo Electrónico"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Campo de Teléfono -->
+        <EditText
+            android:id="@+id/etTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            android:inputType="phone"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Campo de Nombre de Usuario -->
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de Usuario"
+            android:inputType="textPersonName"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Campo de Contraseña -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Campo de Pregunta de Seguridad -->
+        <EditText
+            android:id="@+id/etPregunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pregunta de Seguridad"
+            android:inputType="text"
+            android:drawableStart="@drawable/ic_question"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Campo de Respuesta de Seguridad -->
+        <EditText
+            android:id="@+id/etRespuesta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Respuesta de Seguridad"
+            android:inputType="text"
+            android:drawableStart="@drawable/ic_answer"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Botón de Registro -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrarse"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+</ScrollView>
